@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  postgres-db:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: 'offer-dashboard'
+      POSTGRES_USER: 'offer-dashboard-user'
+      POSTGRES_PASSWORD: 'offer-dashboard-pass'
+    ports:
+      - 5432:5432
